@@ -135,3 +135,52 @@ h1 span{
 .social-link a:hover{
     color: #ff4321;
 }
+@media  screen and (max-width:700px) {
+    nav .logo{
+        width: 50px;
+        cursor: pointer;
+        margin-left: 20px;
+        margin-top: 0;
+    }    
+    .img-box{
+        width: 20%;
+        height: 40%;
+        position: absolute;
+        bottom: 100px;
+        right: 70px;
+        cursor: pointer;
+      
+    }
+    .info{
+        margin-left: 8%;
+        margin-top: 15%;
+        width: 25%;
+    }
+    .info h1{
+        font-size: 30px;
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+      background:var(--primary-colour);
+       position: relative;
+       overflow-y: scroll;
+    }
+    .button{
+        text-decoration: none;
+        margin-top: 30px;
+        background-color:var(--secondary-colour);
+        color:var(--primary-colour);
+        width: 140px;
+        padding:7px 15px;
+        border-radius: 15px;
+        text-align: center;
+        transition: 0.5s;
+        
+    }
+    .social-link{
+        margin-left: 26%;
+        margin-bottom: 50px;
+    
+    }
+}
