@@ -12,7 +12,7 @@
     <div class="container">
         <nav>
             <img src="logo.png" class="logo">
-                <ul>
+                <ul id="menulist">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="#">PORTFOLIA</a></li>
@@ -20,7 +20,12 @@
                     <li><a href="#">HIRE ME</a></li>    
                     
                 </ul>
-              <img src="moon.png" id="icon">  
+              <img src="moon.png" id="icon"> 
+              <div class="menu">
+              <a href="#"   onclick="togglemenu()"><i class="fa-solid fa-bars"></i></a></a>
+            </div>
+        
+              
         </nav>
         <div class="info">
             <h1>I'm  <span>sakthi  </span> </h1>
@@ -38,6 +43,7 @@
             <a href=""><i class="fa-brands fa-linkedin"></i></a>
             <a href=""><i class="fa-brands fa-github"></i></a>
             <a href=""><i class="fa-brands fa-instagram"></i></a>
+          
 
             
         </div>
@@ -53,6 +59,17 @@
                 icon.src="moon.png";
             }
         }
+        var menulist=document.getElementById("menulist");
+         menulist.style.width="0px";
+         function togglemenu(){
+            if (menulist.style.width=="0px")
+                {
+                    menulist.style.width="380px";
+                }
+                else{
+                    menulist.style.width="0px"
+                }
+         }
     
     </script>
 </body>
