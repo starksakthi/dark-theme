@@ -16,6 +16,11 @@
     --secondary-colour:#fff;
     transition: 0.7s;
 }
+nav .menu a {
+     display: none;
+
+
+}
 
 .container{
     width: 100%;
@@ -217,6 +222,7 @@ h1 span{
     nav .menu a {
         color: var(--secondary-colour);
         font-size: 25px;
+        display: block;
 
 
     }
